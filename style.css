@@ -105,8 +105,19 @@ body {
     margin-bottom: 64px;
 }
 
+.projects a {
+    display: block;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
 .projects a img {
     width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects a:hover img {
+    transform: scale(1.02);
 }
 
 .current-positions {

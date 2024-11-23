@@ -55,6 +55,15 @@ body {
     padding-right: 48px;
     padding-bottom: 48px;
     margin-bottom: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-section:hover {
+    background: rgb(24, 24, 25);
+    background: -moz-linear-gradient(128deg, rgb(24, 24, 25) 44%, rgba(21,33,55,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgb(24, 24, 25) 44%, rgba(21,33,55,1) 100%);
+    background: linear-gradient(128deg, #181819 44%, rgba(21,33,55,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181819",endColorstr="#152137",GradientType=1);
 }
 
 .hero-section h1 {
@@ -84,7 +93,7 @@ body {
 }
 
 .hero-section button:hover {
-    background-color: #0052bc;
+    background-color: #1f7cf6;
     font-weight: 900;
     cursor: pointer;
 }

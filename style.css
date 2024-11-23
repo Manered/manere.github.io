@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+*, html, body {
+    font-family: "Host Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: #0B0B0C;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: 900;
+    height: 100px;
+    width: 100%;
+    gap: 16px;
+}
+
+.navbar p {
+    font-size: 24px;
+}
+
+.navbar img {
+    height: 48px;
+    width: 48px;
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.hero-section {
+    background: rgb(15,15,16);
+    background: -moz-linear-gradient(128deg, rgba(15,15,16,1) 44%, rgba(21,33,55,1) 100%);
+    background: -webkit-linear-gradient(128deg, rgba(15,15,16,1) 44%, rgba(21,33,55,1) 100%);
+    background: linear-gradient(128deg, rgba(15,15,16,1) 44%, rgba(21,33,55,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f10",endColorstr="#152137",GradientType=1);
+    border-radius: 24px;
+    height: 100%;
+    padding-top: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 24px;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 32px;
+    width: max-content;
+}
+
+.hero-section p {
+    color: #CED7EB;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 32px;
+    width: max-content;
+}
+
+.hero-section button {
+    color: white;
+    background-color: #006EFF;
+    border-radius: 100px;
+    height: 60px;
+    border: none;
+    width: 180px;
+    font-size: 22px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.projects a img {
+    width: 100%;
+}
+
+.current-positions {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.current-position {
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.current-position img {
+    border-radius: 16px;
+    height: 72px;
+    width: 72px;
+}
+
+.current-position .point {
+    height: 16px;
+    width: 16px;
+    background-color: #006EFF;
+    border-radius: 16px;
+}
+
+.current-position p {
+    color: #CED7EB;
+    font-weight: 400;
+}
+
+.previous-positions {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.previous-position {
+    display: flex;
+    gap: 32px;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.previous-position img {
+    border-radius: 16px;
+    height: 72px;
+    width: 72px;
+}
+
+.previous-position .logo {
+    border-radius: 16px;
+    width: 72px;
+    height: 72px;
+    background-color: #0F0F10;
+}
+
+.previous-position .point {
+    height: 16px;
+    width: 16px;
+    background-color: #26262D;
+    border-radius: 16px;
+}
+
+.previous-position p {
+    color: #CED7EB;
+    font-weight: 400;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-bottom: 64px;
+    border-radius: 16px;
+    background-color: #0F0F10;
+    padding-top: 64px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+}
+
+.contact p {
+    color: #CED7EB;
+    font-weight: 400;
+}
+
+.contact .info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.contact img {
+    width: 72px;
+    height: 72px;
+}
+
+.contact .info div {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar p {
+        font-size: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .hero-section button {
+        width: 140px;
+        font-size: 16px;
+    }
+
+    .hero-section {
+        background-color: transparent;
+        background: transparent;
+    }
+
+    .projects {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .current-position, .previous-position {
+        gap: 12px;
+    }
+
+    .current-position img, .previous-position img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .previous-position .logo {
+        height: 48px;
+        width: 48px;
+    }
+
+    .contact {
+        padding: 24px;
+    }
+
+    .contact img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .projects {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .current-position, .previous-position {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-section {
+        padding: 16px;
+        background-color: transparent;
+        background: transparent;
+    }
+
+    .contact {
+        padding: 16px;
+    }
+
+    .point {
+        display: none;
+    }
+}

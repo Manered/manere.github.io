@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey there!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="Icons/logo.png" alt="Manere's Profile Picture">
+        <p>Manere</p>
+    </div>
+    <div class="page-content">
+        <div class="hero-section">
+            <h1>Yo, I’m Manere, I’m a<br>Developer with 3 years of<br>experience.</h1>
+            <p>I’m also a UI/UX designer, and much more...</p>
+            <button type="button" id="contactButton">Contact Me</button>
+        </div>
+        <div class="projects">
+            <a href="https://discord.gg/PesKDbRCZB">
+                <img src="Icons/continuum-series-project.png">
+            </a>
+            <a href="https://turtled.net">
+                <img src="Icons/turtled-project.png">
+            </a>
+        </div>
+        <div class="current-positions">
+            <h1>Current Positions</h1>
+            <div class="current-position">
+                <div class="point"></div>
+                <img src="Icons/turtled.png">
+                <div class="info">
+                    <h1>Turtled</h1>
+                    <p>Developer</p>
+                </div>
+            </div>
+            <div class="current-position">
+                <div class="point"></div>
+                <img src="Icons/continuum.png">
+                <div class="info">
+                    <h1>Continuum Development</h1>
+                    <p>Owner</p>
+                </div>
+            </div>
+        </div>
+        <div class="previous-positions">
+            <h1>Previous Positions</h1>
+            <div class="previous-position">
+                <div class="point"></div>
+                <img src="Icons/abyss.png">
+                <div class="info">
+                    <h1>AbyssMC</h1>
+                    <p>Owner</p>
+                </div>
+            </div>
+            <div class="previous-position">
+                <div class="point"></div>
+                <img src="Icons/glacier.png">
+                <div class="info">
+                    <h1>GlacierMC</h1>
+                    <p>Owner</p>
+                </div>
+            </div>
+            <div class="previous-position">
+                <div class="point"></div>
+                <div class="logo"></div>
+                <div class="info">
+                    <h1>Speedy Private</h1>
+                    <p>Owner</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contactSection">
+            <h1>Want to work together?</h1>
+            <p>Feel free to reach out to me on Discord:</p>
+            <div class="info">
+                <img src="Icons/discord.svg">
+                <div>
+                    <p>#</p>
+                    <h1>manere</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function () {
+            const contactSection = document.getElementById('contactSection');
+            contactSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    </script>
+</body>
+
+</html>

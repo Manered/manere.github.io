@@ -86,6 +86,7 @@ body {
 .hero-section button:hover {
     background-color: #006EFF;
     font-weight: 900;
+    cursor: pointer;
 }
 
 
@@ -171,10 +172,6 @@ body {
 .previous-position p {
     color: #CED7EB;
     font-weight: 400;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 .contact {
